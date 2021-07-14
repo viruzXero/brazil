@@ -1,0 +1,232 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    background-color: rgb(7, 1, 70);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 5px;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+    margin-right: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#login-button {
+    background-color: red;
+    background-image: linear-gradient(#ccc92b, #f30505);
+    font-weight: 700;
+    color: white;
+    padding: 10px;
+    padding-inline: 30px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#section {
+    background-color: rgb(25, 0, 250);
+    width: 100%;
+    display: flex;
+}
+
+#pic {
+    padding-right: 100px;
+    padding-left: 150px;
+    width: 510px;
+    height: 550px;
+    left: 1299.01px;
+    top: 153px;
+    padding-top: 30px;
+    padding-bottom: 100px; 
+    justify-content: center;
+    align-items: center;  
+}
+
+#pic img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.head h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+}
+.head {
+padding-left: 150px;
+padding-top: 120px;
+padding-bottom: 100px;
+width: 485px;
+height: 230px;
+left: 156px;
+top: 207px;
+}
+button> a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+button {
+    border-radius: 4px;
+    background-image: linear-gradient(#ccc92b, #f30505);
+    border: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 20px;
+    padding: 16px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+  
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+}
+
+button {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+button:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+section {
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.player-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+   
+   
+}
+.player-frame {
+    width: 330px;
+    height: 474px;
+    left: 540px;
+    top: 747px;
+    box-shadow: 1px 1px 10px 1px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    margin-inline-start: 60px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.player-box {
+    width: 315px;
+    height: 459px;
+    left: 525px;
+    top: 732px;
+    background-color: rgb(255, 255, 255);
+   
+}
+
+.player img {
+    width: 100%;
+    height: 300px;
+}
+
+.player-details {
+    position: absolute;
+    width: 315px;
+}
+.lightfont {
+   font-family: 'Nunito', sans-serif;;
+   font-weight: 600;
+}
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+footer {
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 2px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer> p> a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding-inline: 20px;
+}
+footer img {
+    width: 80px;
+    height: 100px;
+}
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width:688px) {
+    header {
+        display: none;
+    }
+    #section {
+        display: flex;
+       flex-direction: column;
+    
+        width: 688px;
+        background-color: red;
+
+    }
+    .head {
+        width:300px;
+        background-color: red;
+    }
+    #pic {
+        margin-top:150px;
+        width: 688px;
+        background-color: red;
+    }
+    
+    #pic img {
+    background-color: red;
+        width: 300px;
+        height: 400px;
+    }
+    .player-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0px;
+       
+       
+    }
+    
+}
